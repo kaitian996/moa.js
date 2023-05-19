@@ -1,0 +1,27 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": true,
+        "declaration": true,
+        "declarationMap": false,
+        "forceConsistentCasingInFileNames": true,
+        "lib": ["es2018"],
+        "module": "commonjs",
+        "noFallthroughCasesInSwitch": true,
+        "pretty": true,
+        "sourceMap": false,
+        "target": "es2018",
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "noImplicitThis": false,
+        "noUnusedLocals": false,
+        "stripInternal": true,
+        "noImplicitReturns": false,
+        "strict": false,
+        "noEmitOnError": false,
+        "skipLibCheck": true
+    },
+    "exclude": ["dist", "node_modules", "test", "site"]
+}
