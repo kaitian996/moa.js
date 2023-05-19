@@ -23,7 +23,7 @@ start.ts #start
 ```js
 // Controller.ts
 
-import { Get, Post, Controller, Inject, Query } from '@moa/decorator'
+import { Get, Post, Controller, Inject, Query } from '@moa.js.js/decorator'
 import { adminService } from './Service'
 
 @Controller('/admin') //根路由
@@ -51,7 +51,7 @@ export class Admin {
 ### service层
 ```js
 // Service.ts
-import {Provider} from '@moa/decorator';
+import {Provider} from '@moa.js/decorator';
 
 //提供依赖
 @Provider()
@@ -66,7 +66,7 @@ export class adminService {
 
 ```js
 // start.ts
-import { setupGlobalApplicationContext } from "@moa/core"
+import { setupGlobalApplicationContext } from "@moa.js/core"
 import { resolve } from "path"
 const app = setupGlobalApplicationContext({
     appDir: resolve(process.cwd(), "src"),
@@ -92,7 +92,7 @@ service is runing at http://localhost:3000
 ### 依赖注入
 > 无需显式的new 对象操作，即可获得对象实例
 ```js
-import {Provider} from '@moa/decorator';
+import {Provider} from '@moa.js/decorator';
 
 //提供依赖
 @Provider()
@@ -114,7 +114,7 @@ class controller{
 ### 路由
 > 声明式的定义定义路由
 ```js
-import { Get, Post, Controller, Inject, Query } from '@moa/decorator'
+import { Get, Post, Controller, Inject, Query } from '@moa.js/decorator'
 
 @Controller('/') //根路由，最终访问路径为根路由加上子路由
 export class Admin {
@@ -180,8 +180,8 @@ start.ts #start
 ### 可选配置
 > 只需要利用`@Configuration`装饰器，并且实现`IConfig`接口即可
 ```ts
-import { IConfig, IConfiguration } from "@moa/core"
-import { Configuration } from "@moa/decorator"
+import { IConfig, IConfiguration } from "@moa.js/core"
+import { Configuration } from "@moa.js/decorator"
 
 @Configuration()
 export class Config implements IConfig {
