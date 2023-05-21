@@ -12,13 +12,27 @@ export default defineConfig({
         sidebar: {
             "/docs/": [
                 {
-                    title: "介绍",
-                    collapsable:false,
-                    children: ["/docs/introduce/intro.html"], 
+                    title: "指南",
+                    collapsable: false,
+                    children: ["/docs/introduce/intro.html"],
                 },
                 {
-                    title: "基础", 
-                    children: ["/docs/base/be.html"], 
+                    title: "基础",
+                    collapsable: false,
+                    children: [
+                        "/docs/base/start.html",
+                        "/docs/base/controller.html",
+                        "/docs/base/param.html",
+                        "/docs/base/container.html"
+                    ],
+                },
+                {
+                    title: "框架原理",
+                    collapsable: false,
+                    children: [
+                        "/docs/principle/decorator.html",
+                        "/docs/principle/design.html"
+                    ],
                 },
             ],
         },
